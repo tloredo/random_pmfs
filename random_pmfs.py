@@ -433,6 +433,7 @@ if __name__ == '__main__':
     g_pmf.plot_pdfs(axs[0])
     g_pmf.plot_pmf(axs[1])
 
+    # Sample PMFs using an uniformly binned Gaussian base dist'n.
     nbins = 20
     g_pmf = BinnedPDF(nbins, (-1., 11.), pdf=gaussian)
     conc = nbins + nbins*100
